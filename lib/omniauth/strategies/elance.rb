@@ -37,6 +37,10 @@ module OmniAuth
       def raw_info
         # Reference: https://www.elance.com/q/api2/methods/profiles/my
         @raw_info ||= access_token.get('/profiles/my?catId=10183')
+
+        data = @raw_info['data']
+        data = data['providerProfile'] if data
+        data
       end
 
     end
