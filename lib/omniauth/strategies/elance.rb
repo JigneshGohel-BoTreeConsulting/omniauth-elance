@@ -23,7 +23,7 @@ module OmniAuth
 
       info do
         {
-          user_name: raw_info['userName'],
+          userName: raw_info['userName'],
           name: raw_info['businessName']
         }
       end
