@@ -36,11 +36,12 @@ module OmniAuth
 
       def raw_info
         # Reference: https://www.elance.com/q/api2/methods/profiles/my
-        @raw_info ||= access_token.get('/profiles/my?catId=10183')
+        # parsed is a method available in https://github.com/intridea/oauth2/blob/master/lib/oauth2/response.rb
+        raw_info = access_token.get('/profiles/my?catId=10183').parsed || {}
 
-        data = @raw_info['data']
+        data = raw_info['data']
         data = data['providerProfile'] if data
-        data
+        data || {}
       end
 
     end
