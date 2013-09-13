@@ -41,9 +41,8 @@ Here's an example [Auth Hash](https://github.com/intridea/omniauth/wiki/Auth-Has
     :name => 'Jignesh Gohel'
   },
   :credentials => {
-    :token => 'ABCDEF...', # OAuth 2.0 access_token, which you may wish to store
-    :expires_at => 1321747205, # when the access token expires (it always will)
-    :expires => true # this will always be true
+    :token => 'ABCDEF...', # access token, which you may wish to store
+    :secret => '1321747205', # access token secret
   },
   :extra => {
     :raw_info => {
