@@ -37,7 +37,7 @@ Here's an example [Auth Hash](https://github.com/intridea/omniauth/wiki/Auth-Has
   :provider => 'elance',
   :uid => '1234567',
   :info => {
-    :userNname => 'jgohel',
+    :userName => 'jgohel',
     :name => 'Jignesh Gohel'
   },
   :credentials => {
