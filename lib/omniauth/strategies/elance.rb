@@ -12,8 +12,8 @@ module OmniAuth
       # token_url
       option :client_options, {
           site: "https://api.elance.com",
-          authorize_url: 'api2/oauth/authorize',
-          token_url: 'api2/oauth/token'
+          authorize_url: '/api2/oauth/authorize',
+          token_url: '/api2/oauth/token'
       }
 
       # Called after authentication has succeeded.
