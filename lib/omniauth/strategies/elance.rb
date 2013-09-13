@@ -1,4 +1,4 @@
-require 'omniauth-oauth2'
+require 'omniauth-oauth'
 
 module OmniAuth
   module Strategies
@@ -11,7 +11,7 @@ module OmniAuth
       # https://api.elance.com/api2 thus passing custom authorize_url and
       # token_url
       option :client_options, {
-          site: "https://api.elance.com/api2",
+          site: "https://api.elance.com",
           authorize_url: 'api2/oauth/authorize',
           token_url: 'api2/oauth/token'
       }
